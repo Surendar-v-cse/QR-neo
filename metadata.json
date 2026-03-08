@@ -1,6 +1,6 @@
 {
-  "name": "QR Neo-Brutalist",
-  "description": "A production-ready QR code generator and scanner with a bold Neo-Brutalism design system.",
+  "name": "QR NEO",
+  "description": "A QR code generator and scanner system.",
   "requestFramePermissions": [
     "camera"
   ]
