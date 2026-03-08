@@ -1,0 +1,7 @@
+{
+  "name": "QR Neo-Brutalist",
+  "description": "A production-ready QR code generator and scanner with a bold Neo-Brutalism design system.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

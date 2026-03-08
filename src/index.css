@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-neo-yellow: #facc15;
+  --color-neo-blue: #3b82f6;
+  --color-neo-pink: #f472b6;
+  --color-neo-green: #4ade80;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black font-sans;
+  }
+}
+
+@layer components {
+  .neo-border {
+    border-width: 4px;
+    border-color: black;
+  }
+  
+  .neo-shadow {
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  }
+
+  .neo-shadow-sm {
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  }
+  
+  .neo-button {
+    @apply px-6 py-3 font-display font-bold text-xl transition-all;
+    border-width: 4px;
+    border-color: black;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  }
+  
+  .neo-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+  }
+
+  .neo-card {
+    @apply p-6 bg-white;
+    border-width: 4px;
+    border-color: black;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  }
+
+  .neo-input {
+    @apply px-4 py-3 text-lg focus:outline-none focus:ring-4 focus:ring-neo-yellow/50;
+    border-width: 4px;
+    border-color: black;
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-color: #f0f0f0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700&display=swap');
